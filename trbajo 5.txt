@@ -1,0 +1,41 @@
+select * 
+from AUTHORS
+INNER join BOOKS
+on AUTHORS.ID=BOOKS.AUTHORID;
+
+select *
+from AUTHORS
+left outer join BOOKS
+on AUTHORS.ID=BOOKS.AUTHORID;
+
+select * 
+from AUTHORS
+right outer join BOOKS
+on AUTHORS.ID=BOOKS.AUTHORID;
+
+select *
+from CATEGORIES
+full outer join BOOKS
+on CATEGORIES.name=AUTHORS.name;
+
+select *
+from AUTHORS
+left join BOOKS
+on AUTHORS.ID=BOOKS.AUTHORID
+where BOOKS.AUTHORID is null;
+
+select *
+from AUTHORS
+right join BOOKS 
+on AUTHORS.ID=BOOKS.AUTHORID
+where AUTHORS.ID is null;
+
+select *
+from AUTHORS
+left outer join BOOKS
+on AUTHORS.ID=BOOKS.AUTHORID
+UNION ALL 
+select * 
+from AUTHORS
+right outer join BOOKS
+on AUTHORS.ID=BOOKS.AUTHORID;
