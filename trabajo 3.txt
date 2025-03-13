@@ -1,0 +1,19 @@
+insert into GameScores (id, teamiScore, team2core) values (1,"Equipo 1","Equipo 2");
+
+insert into HockeyGame (id, roundid, stratTime, description, team1id, team2id) values (1, );
+
+insert into HockeyTeam (id, name, logo) values (1, "Nombre", "Logo");
+
+insert into HockeyTeamPlayer (id, hockeyTeamld, firstName, lastName, jerseyNum, position) values (1, "Temerarios", "Juan", "Gutierrez", "socales", "Arquero");
+
+insert into PlayoffRound (id, team1id, team2id, startTime, endTime, roundNum) values (1, 5, 5, 14:30, 15:25, 5);
+
+insert into RoundStats (id, numShutouts, goalLeaderld, assistLeaderld, penaltyLeaderld, plusMinusLeaderld, faceoffsWonLeaderld, sogleaderld) VALUES (1, 50, 2, 8, 6, 5, 9, 2);
+
+insert into User (id, username, password) values (1, "Pepepromax", "Admin");
+
+insert into UserScorePicks (id, hockeyGameld, team1score, team2score, userld) values (1, 50, 10, 15, 1);
+
+insert into UserStatsPicks (id, roundld, goalLeaderld, assistLeaderld, penaltyLeaderld, plusMinusLeaderld, TaceofsWonLeaderld, sogLeaderld, numShutouts, userld) values (1, 10, 20, 35, 50, 35, 74, 85, 59, 93);
+
+insert into Userlnfo (id, firstName, lastName, email, round1Points, round2Points, round3Points, round4Points) values (1, "Santo", "Antoni", "santoantonio@gmail.com", 45, 45, 45, 45);
